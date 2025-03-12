@@ -64,7 +64,7 @@ df = pd.read_csv('TCB_2018_2020.csv', index_col=0)
 print(df.head())
 
 #Truy xuat dl theo dieu kien
-df = pd.read_csv('TCB_2018_2020.csv',index_col=0)
+df = pd.read_csv('TCB_2018_2020.csv', index_col=0)
 ## Xuất dữ liệu với điều kiện giá đóng cửa lớn hơn 98
 print(df[df['Close']>98])
 
@@ -74,25 +74,25 @@ df = pd.read_csv('TCB_2018_2020.csv', header =None)
 print(df[[0,2,3]].tail())
 
 #Truy xuat du lieu theo dong
-df = pd.read_csv('TCB_2018_2020.csv',index_col=0)
+df = pd.read_csv('TCB_2018_2020.csv', index_col=0)
 print(df.loc[['2019-06-10', '2020-06-10']])
 
 df = pd.read_csv('TCB_2018_2020.csv', index_col = 0)
 print(df.iloc[0])
 
-df = pd.read_csv('TCB_2018_2020.csv',index_col=0)
+df = pd.read_csv('TCB_2018_2020.csv', index_col=0)
 print(df.iloc[[0,2]])
 
-df = pd.read_csv('TCB_2018_2020.csv',index_col = 0)
+df = pd.read_csv('TCB_2018_2020.csv', index_col = 0)
 print(df.iloc[35:41])
 
 #Truy xuat du lieu theo phan tu
-df = pd.read_csv('TCB_2018_2020.csv',index_col=0)
+df = pd.read_csv('TCB_2018_2020.csv', index_col=0)
 #Truy xuat gia dong cua ngay 20-08-2019
 print(df.loc['2019-08-20','Close'])
 print(df.loc['2020-12-25':,'Open'])
 
-df = pd.read_csv('TCB_2018_2020.csv',index_col=0)
+df = pd.read_csv('TCB_2018_2020.csv', index_col=0)
 #Truy xuat dong thu 5 vaf cot dau tien
 print(df.iloc[4,0])
 #Truy xuat dong tu dong thu 648 voi tat ca cac cot
